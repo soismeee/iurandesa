@@ -11,4 +11,8 @@ class TransaksiIuran extends Model
 
     protected $guarded = ['id'];
 
+    public function warga(){
+        return $this->belongsTo(Warga::class, 'warga_id');
+    }
+
 }

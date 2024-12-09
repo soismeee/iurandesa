@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('bulan', 10);
             $table->year('tahun');
             $table->date('tanggal_iuran');
+            $table->string('nominal');
             $table->timestamps();
         });
     }

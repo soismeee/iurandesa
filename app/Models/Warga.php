@@ -11,4 +11,8 @@ class Warga extends Model
 
     protected $guarded = ['id'];
 
+    public function iuranWarga(){
+        return $this->hasMany(TransaksiIuran::class);
+    }
+
 }

@@ -4,23 +4,19 @@
     <div class="navbar-brand-box">
         <a href="/" class="logo logo-dark">
             <span class="logo-sm">
-                {{-- <img src="/assets/img/sapadaku/Logo_white.png" alt="logo-sm-dark" height="36"> --}}
                 IW    
             </span>
-            <span class="logo-lg">
-                {{-- <img src="/assets/img/sapadaku/Logo_white.png" alt="logo-dark" height="36"> --}}
-                Iuran Warga
+            <span class="logo-lg text-white">
+                IURAN WARGA
             </span>
         </a>
 
         <a href="/" class="logo logo-light">
             <span class="logo-sm">
-                {{-- <img src="/assets/img/sapadaku/icon-02.png" alt="logo-sm-light" height="36"> --}}
                 IW    
             </span>
-            <span class="logo-lg">
-                {{-- <img src="/assets/img/sapadaku/Logo_white.png" alt="logo-light" height="34"> --}}
-                Iuran Warga    
+            <span class="logo-lg text-white">
+                IURAN WARGA
             </span>
         </a>
     </div>

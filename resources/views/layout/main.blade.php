@@ -32,19 +32,19 @@
                     <div class="navbar-brand-box">
                         <a href="/" class="logo logo-dark">
                             <span class="logo-sm">
-                                <img src="/assets/img/sapadaku/icon-01.png" alt="logo-sm-dark" height="40">
+                                IW
                             </span>
                             <span class="logo-lg">
-                                <img src="/assets/img/sapadaku/icon-01.png" alt="logo-dark" height="40">
+                                IW
                             </span>
                         </a>
-
+                        
                         <a href="/" class="logo logo-light">
                             <span class="logo-sm">
-                                <img src="/assets/img/sapadaku/icon-01.png" alt="logo-sm-light" height="40">
+                                IW
                             </span>
                             <span class="logo-lg">
-                                <img src="/assets/img/sapadaku/icon-01.png" alt="logo-light" height="40">
+                                IW
                             </span>
                         </a>
                     </div>
@@ -61,14 +61,6 @@
                 </div>
 
                 <div class="d-flex">
-
-                    <!-- App Search-->
-                    <form class="app-search d-none d-lg-block">
-                        <div class="position-relative">
-                            <input type="text" class="form-control" placeholder="Search...">
-                            <span class="ri-search-line"></span>
-                        </div>
-                    </form>
 
                     <div class="dropdown d-inline-block d-lg-none ms-2">
                         <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"

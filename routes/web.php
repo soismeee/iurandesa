@@ -7,16 +7,7 @@ use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\WargaController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+
 Route::get('/', [HomeController::class, 'index'])->middleware('auth');
 Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
 
@@ -33,9 +24,17 @@ Route::post('/jsonKategori', [KategoriController::class, 'json'])->middleware('a
 Route::post('/delkategori/{id}', [KategoriController::class, 'destroy'])->middleware('auth');
 
 Route::resource('/warga', WargaController::class)->middleware('auth');
+Route::get('/getWarga', [WargaController::class, 'getWarga'])->middleware('auth');
 Route::post('/jsonWarga', [WargaController::class, 'json'])->middleware('auth');
 
 Route::get('/daftar_iuran',[IuranController::class, 'index'])->middleware('auth');
 Route::get('/input_iuran',[IuranController::class, 'create'])->middleware('auth');
+Route::get('/rekap',[IuranController::class, 'rekap'])->middleware('auth');
+Route::post('/saveIuran', [IuranController::class, 'store'])->middleware('auth');
+Route::post('/jsonHariIni', [IuranController::class, 'jsonhariIni'])->middleware('auth');
+Route::post('/jsonAllIuran', [IuranController::class, 'jsonAll'])->middleware('auth');
+Route::patch('/changeIuran/{id}', [IuranController::class, 'update'])->middleware('auth');
+Route::delete('/getIuran/{id}', [IuranController::class, 'destroy'])->middleware('auth');
 
 Route::get('/rekap_iuran', [IuranController::class, 'rekap'])->middleware('auth');
+Route::post('/jsonRekap', [IuranController::class, 'jsonRekap'])->middleware('auth');
