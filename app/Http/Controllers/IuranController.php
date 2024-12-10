@@ -286,6 +286,5 @@ class IuranController extends Controller
             'data' => $data,
             'tahun' => request('tahun')
         ]);
-
-    }
+    }   
 }

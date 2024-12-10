@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->middleware('auth');
 Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+Route::get('/getDashbaord', [HomeController::class, 'getDashbaord'])->middleware('auth');
 
 // route web untuk backend
 Route::get('/login', [AuthController::class, 'index'])->name('login');
